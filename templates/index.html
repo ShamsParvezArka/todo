@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> TODO </title>
+	</head>
+	<body align = "center">
+		<h3> Tasks </h3>
+
+		{% if task %}
+		<div>
+			<ol>
+				{% for i in task %}
+					<p> {{i[1]}} <p>
+				{% endfor %}
+			<ol>
+		</div>
+
+		{% else %}
+		<div> nothing to show here </div>
+		{% endif %}
+	</body>
+</html>
